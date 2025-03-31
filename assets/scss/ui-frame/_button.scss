@@ -1,0 +1,11 @@
+.button{
+    background-color: #FFB700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    &:active {
+        transform: scale(0.95); 
+    }
+}

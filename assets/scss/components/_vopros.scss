@@ -1,0 +1,233 @@
+$black: #000000;
+$yellow: #ffb700;
+$dark-yellow: #6d5e2c;
+$white: #ffffff;
+
+.vopros {
+    padding: 50px ;
+    margin-bottom: 100px;
+    border-top: 4px solid $yellow; // Толстая желтая линия вверху
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 180px;
+    background-color: $black;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $yellow;
+    }
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 200px;
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+
+        &-info {
+            &-up {
+                background-color: $yellow;
+                display: flex;
+                justify-content: space-between;
+                padding: 25px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: darken($yellow, 5%);
+                }
+
+                &-txt {
+                    color: $black;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                &-icon {
+                    width: 15px;
+                    transition: transform 0.3s;
+                }
+            }
+
+            &-active &-up {
+                background-color: darken($yellow, 8%);
+                
+                &-icon {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &-down {
+                background-color: $dark-yellow;
+                padding: 20px;
+                display: none;
+
+                &-txt {
+                    font-weight: 300;
+                    color: $white;
+                    line-height: 1.6;
+                }
+            }
+
+            &-active &-down {
+                display: block;
+            }
+        }
+    }
+}
+
+// Адаптивные стили
+@media (max-width: 1400px) {
+    .vopros {
+        &__container {
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .vopros {
+        padding: 40px 0;
+        margin-bottom: 80px;
+        margin-top: 160px;
+
+        &__container {
+            padding: 80px 100px;
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .vopros {
+        padding: 30px 0;
+        margin-bottom: 60px;
+        margin-top: 140px;
+
+        &__container {
+            padding: 60px 70px;
+            gap: 30px;
+            margin-bottom: 60px;
+
+            &-info {
+                &-up {
+                    padding: 20px;
+                    
+                    &-txt {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .vopros {
+        padding: 20px 0;
+        margin-bottom: 40px;
+        margin-top: 120px;
+
+        &__container {
+            padding: 40px 30px;
+            gap: 20px;
+            margin-bottom: 40px;
+
+            &-info {
+                &-up {
+                    padding: 15px;
+                    
+                    &-txt {
+                        font-size: 15px;
+                    }
+                }
+
+                &-down {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .vopros {
+        padding: 15px 0;
+        margin-bottom: 30px;
+        margin-top: 100px;
+
+        &__container {
+            padding: 30px 15px;
+            gap: 15px;
+            margin-bottom: 30px;
+
+            &-info {
+                &-up {
+                    padding: 12px;
+                    
+                    &-txt {
+                        font-size: 14px;
+                    }
+                }
+
+                &-down {
+                    padding: 12px;
+                    
+                    &-txt {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .vopros {
+        padding: 10px 0;
+        margin-bottom: 20px;
+        margin-top: 80px;
+        border-top-width: 3px;
+
+        &::before {
+            height: 3px;
+            top: -3px;
+        }
+
+        &__container {
+            padding: 20px 10px;
+            gap: 10px;
+            margin-bottom: 20px;
+
+            &-info {
+                &-up {
+                    padding: 10px;
+                    flex-direction: column;
+                    gap: 5px;
+                    
+                    &-txt {
+                        font-size: 13px;
+                    }
+                }
+
+                &-down {
+                    padding: 10px;
+                    
+                    &-txt {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

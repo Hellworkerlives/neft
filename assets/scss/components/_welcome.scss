@@ -1,0 +1,153 @@
+.welcome {
+    background-image: url('../../img/фонефть.png');
+    height: 1080px; /* Initial height for larger screens */
+    display: flex;
+    justify-content: right;
+    padding: 50px;
+  
+    &__container {
+      background-color: rgba(10, 10, 10, 0.6);
+      width: 550px; /* Initial width for larger screens */
+      height: 600px; /* Initial height for larger screens */
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+  
+      &-text {
+        display: flex;
+      }
+  
+      &-info {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        &-text{
+          @media (max-width: 480px){
+            font-size: 15px;
+          }
+        }
+  
+        &-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 25px;
+  
+          &-bn {
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 20px;
+          }
+        }
+  
+        &-txt {
+          font-size: 40px;
+          color: #FFB700;
+          @media (max-width: 480px){
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  
+    /* Media Queries for Responsiveness */
+  
+    /* Extra Large screens (desktops, 1200px and up) - often not needed as base styles usually look good */
+  
+    /* Large screens (large desktops, 992px and up) */
+    @media (max-width: 1200px) {
+      height: auto; /* Allow height to adjust based on content */
+      padding: 30px;
+  
+      &__container {
+        width: 450px;
+        height: auto;
+        padding: 15px;
+      }
+    }
+  
+    /* Medium screens (tablets, 768px and up) */
+    @media (max-width: 992px) {
+      justify-content: center; /* Center the container on smaller screens */
+      align-items: center; /* Center vertically as well */
+      padding: 20px;
+  
+      &__container {
+        width: 80%; /* Take up more of the screen width */
+        max-width: 500px; /* Set a maximum width */
+        padding: 10px;
+      }
+    }
+  
+    /* Small screens (smartphones, 576px and up) */
+    @media (max-width: 768px) {
+      padding: 10px;
+  
+      &__container {
+        width: 95%; /* Take up almost the entire screen width */
+        max-width: none; /* Remove maximum width */
+        height: auto; /* Let the height be determined by the content */
+        padding: 5px;
+      }
+  
+      &-info {
+          &-txt {
+              font-size: 30px;
+          }
+      }
+    }
+  
+    /* Extra small screens (smaller smartphones, less than 576px) */
+    @media (max-width: 576px) {
+      &__container {
+        width: 100%; /* Ensure it takes up the full width */
+      }
+  
+        &-info {
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the start in column layout */
+            gap: 5px;
+  
+            &-txt {
+                font-size: 20px;
+            }
+  
+            &-button {
+              padding-top: 10px;
+              display: none;
+  
+              &-bn {
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 16px;
+                display: none;
+              }
+            }
+        }
+    }
+  
+     /* Even smaller screens (down to 250px) */
+    @media (max-width: 250px) {
+        padding: 5px; /* Further reduce padding */
+        &__container {
+            width: 100%;
+            padding: 2px;
+        }
+        &-info {
+            &-txt {
+                font-size: 18px; /* Even smaller text */
+            }
+  
+            &-button {
+                &-bn {
+                    font-size: 12px; /* Smaller button text */
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    display: none;
+                }
+            }
+        }
+  
+    }
+  }

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Подключение boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/assets/style/normalize.min.css">
+    <link rel="stylesheet" href="/assets/style/main-style.min.css">
+    <script defer src="/assets/javascript/application.js"></script>
+</head>
+<body class="application">
+    <div class="application__template">
+        <header class="application__header header" id="header">
+            <div class="header__container">
+                <div class="header__container-left">
+                    <img src="./assets/img/logo.svg" alt="logo" class="header__container-leftLogo">
+                </div>
+                <img src="./assets/img/burger.svg" alt="" class="burger" id="burger">
+                <div class="header__container-center">
+                    <ul style="align-items: center; padding: 0; margin: 0;">
+                        <li style="list-style: none;" class="header__container-center-link" id="link">
+                            <a href="#wel" class="header__container-center-item">Главная</a>
+                            <a href="#wel" class="header__container-center-item">Компания</a>
+                            <a href="#kont" class="header__container-center-item">Продукция</a>
+                            <a href="#oil" class="header__container-center-item">Деятельность</a>
+                            <a href="#vopros" class="header__container-center-item">Инвесторам и акционерам</a>
+                            <a href="#eco" class="header__container-center-item">Экология</a>
+                            <a href="#gallery" class="header__container-center-item">Галерея</a>
+                            <a href="#kontact" class="header__container-center-item">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__container-right">
+                    <button class="button header__container-right-bn"><a href="#feedback">+7 (962) 479 78 86</a></button>
+                </div>
+            </div>
+        </header>
+        <main class="application__main main" id="main">
+            <div class="main__content" id="main-content">
+                <section class="welcome" id="wel">
+                    <div class="welcome__container">
+                        <div class="welcome__container-info">
+                            <h2 class="welcome__container-info-txt">14,6%</h2>
+                            <h2 class="welcome__container-info-text">Объема эксплуатационного
+                                бурения в России</h2>
+                        </div>
+                        <div class="welcome__container-info">
+                            <h2 class="welcome__container-info-txt">10,6%</h2>
+                            <h2 class="welcome__container-info-text">Объема добычи нефти в России</h2>
+                        </div>
+                        <div class="welcome__container-info">
+                            <h2 class="welcome__container-info-txt">22,5%</h2>
+                            <h2 class="welcome__container-info-text">Поисково-разведочного бурения в России</h2>
+                        </div>
+                        <div class="welcome__container-info">
+                            <h2 class="welcome__container-info-txt">99,3%</h2>
+                            <h2 class="welcome__container-info-text">Уровень использования попутного газа</h2>
+                        </div>
+                        <div class="welcome__container-info-button">
+                            <button class="welcome__container-info-button-bn button"><a href="o.html">Узнать подробнее</a></button>
+                        </div>
+                    </div>
+                </section>
+                <section class="kompany" id="komp">
+                    <h2 class="kont-products-title">О Компании</h2>
+                    <div class="kompany__container">
+                        <h2 class="kompany__container-text">
+                            <span style="color:#FFB700;">ТНК-Волгоград</span> – это динамично развивающаяся нефтяная компания, осуществляющая свою деятельность в самом сердце Волгоградской области, регионе с богатой историей нефтедобычи. Мы являемся одним из ключевых игроков на региональном рынке, обеспечивая стабильные поставки высококачественных нефтепродуктов как для промышленных предприятий, так и для частных потребителей.
+                        </h2>
+                    </div>
+                </section>
+                <section class="kont-products-section" id="kont">
+                  <div class="kont-products-container">
+                    <h2 class="kont-products-title">Продукция и услуги</h2>
+                    
+                    <div class="kont-products-grid">
+                      <div class="kont-products-card">
+                        <div class="kont-products-card-image">
+                          <img src="./assets/img/p/p1.png" alt="Добыча нефти">
+                        </div>
+                        <div class="kont-products-card-content">
+                          <h3 class="kont-products-card-title">Добыча нефти</h3>
+                          <p class="kont-products-card-text">
+                            Полный цикл добычи нефти с применением современных технологий и оборудования.
+                          </p>
+                          <ul class="kont-products-card-features">
+                            <li>Разведка месторождений</li>
+                            <li>Бурение скважин</li>
+                            <li>Эксплуатация месторождений</li>
+                          </ul>
+                          <a href="neft.html" class="kont-products-card-button">Подробнее</a>
+                        </div>
+                      </div>
+                      
+                      <div class="kont-products-card">
+                        <div class="kont-products-card-image">
+                          <img src="./assets/img/p/p2.png" alt="Переработка нефти">
+                        </div>
+                        <div class="kont-products-card-content">
+                          <h3 class="kont-products-card-title">Переработка нефти</h3>
+                          <p class="kont-products-card-text">
+                            Современные нефтеперерабатывающие комплексы с высокой степенью очистки.
+                          </p>
+                          <ul class="kont-products-card-features">
+                            <li>Производство моторных топлив</li>
+                            <li>Нефтехимическое производство</li>
+                            <li>Каталитический крекинг</li>
+                          </ul>
+                          <a href="neft.html" class="kont-products-card-button">Подробнее</a>
+                        </div>
+                      </div>
+                      
+                      <div class="kont-products-card">
+                        <div class="kont-products-card-image">
+                          <img src="./assets/img/p/p3.png" alt="Транспортировка">
+                        </div>
+                        <div class="kont-products-card-content">
+                          <h3 class="kont-products-card-title">Транспортировка</h3>
+                          <p class="kont-products-card-text">
+                            Надежная система транспортировки нефти и нефтепродуктов.
+                          </p>
+                          <ul class="kont-products-card-features">
+                            <li>Трубопроводный транспорт</li>
+                            <li>Железнодорожные перевозки</li>
+                            <li>Морские терминалы</li>
+                          </ul>
+                          <a href="transport.html" class="kont-products-card-button">Подробнее</a>
+                        </div>
+                      </div>
+                      
+                      <div class="kont-products-card">
+                        <div class="kont-products-card-image">
+                          <img src="./assets/img/p/p4.png" alt="Геологоразведка">
+                        </div>
+                        <div class="kont-products-card-content">
+                          <h3 class="kont-products-card-title">Геологоразведка</h3>
+                          <p class="kont-products-card-text">
+                            Комплексные геологоразведочные работы с использованием передовых технологий.
+                          </p>
+                          <ul class="kont-products-card-features">
+                            <li>Сейсмическая разведка 3D/4D</li>
+                            <li>Геофизические исследования</li>
+                            <li>Анализ запасов</li>
+                          </ul>
+                          <a href="razvetka.html" class="kont-products-card-button">Подробнее</a>
+                        </div>
+                      </div>
+                      
+                      <div class="kont-products-card">
+                        <div class="kont-products-card-image">
+                          <img src="./assets/img/p/p5.png" alt="Экологические решения">
+                        </div>
+                        <div class="kont-products-card-content">
+                          <h3 class="kont-products-card-title">Экологические решения</h3>
+                          <p class="kont-products-card-text">
+                            Инновационные технологии для снижения экологической нагрузки.
+                          </p>
+                          <ul class="kont-products-card-features">
+                            <li>Рекультивация земель</li>
+                            <li>Системы очистки</li>
+                            <li>Экологический мониторинг</li>
+                          </ul>
+                          <a href="#eco" class="kont-products-card-button">Подробнее</a>
+                        </div>
+                      </div>
+                      
+                      <div class="kont-products-card">
+                        <div class="kont-products-card-image">
+                          <img src="./assets/img/p/p6.png" alt="Технические услуги">
+                        </div>
+                        <div class="kont-products-card-content">
+                          <h3 class="kont-products-card-title">Технические услуги</h3>
+                          <p class="kont-products-card-text">
+                            Комплексные технические решения для нефтегазовой отрасли.
+                          </p>
+                          <ul class="kont-products-card-features">
+                            <li>Сервисное обслуживание</li>
+                            <li>Ремонт оборудования</li>
+                            <li>Технический аудит</li>
+                          </ul>
+                          <a href="log.html" class="kont-products-card-button">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="oil" id="oil">
+                  <h2 class="ecology__title">Деятельность</h2>
+                  <div class="oil-company-sections">
+                    <div class="oil-company-sections__item">
+                      <img src="./assets/img/d1.png" alt="Разведка и добыча" class="oil-company-sections__image">
+                      <a href="razvetka.html" class="oil-company-sections__button">Разведка и добыча</a>
+                    </div>
+                  
+                    <div class="oil-company-sections__item">
+                      <img src="./assets/img/d2.png" alt="Нефтепереработка" class="oil-company-sections__image">
+                      <a href="neft.html" class="oil-company-sections__button">Нефтепереработка</a>
+                    </div>
+                  
+                    <div class="oil-company-sections__item">
+                      <img src="./assets/img/d3.png" alt="Логистика и сбыт" class="oil-company-sections__image">
+                      <a href="log.html" class="oil-company-sections__button">Логистика и сбыт</a>
+                    </div>
+                  </div>
+                </section>
+                <setion class="vopros" id="vopros">
+                    <div class="vopros__container">
+                      <h2 class="ecology__title">Инвесторам</h2>
+                        <div class="vopros__container-info">
+                            <div class="vopros__container-info-up" id="up1" data-target="down1">
+                                <h2 class="vopros__container-info-up-txt">Финансовая Устойчивость и Рост</h2>
+                                <img src="./assets/img/neft.svg" alt="Капелька" class="vopros__container-info-up-icon">
+                            </div>
+                            <div class="vopros__container-info-down" id="down1">
+                                <h2 class="vopros__container-info-down-txt">Финансовая устойчивость – приоритет. Инвестируем в долгосрочные проекты, диверсифицируем активы, управляем долгом. Оптимизируем процессы, снижаем затраты, чтобы обеспечивать стабильный рост и максимизировать отдачу от вложений.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="vopros__container-info">
+                            <div class="vopros__container-info-up" id="up2" data-target="down1">
+                                <h2 class="vopros__container-info-up-txt">Прозрачность и Отчетность</h2>
+                                <img src="./assets/img/neft.svg" alt="Капелька" class="vopros__container-info-up-icon">
+                            </div>
+                            <div class="vopros__container-info-down" id="down2">
+                                <h2 class="vopros__container-info-down-txt">Мы стремимся к максимальной прозрачности в финансовой деятельности. Публикуем подробные отчеты, раскрываем информацию об операциях и доходах, придерживаемся высоких стандартов корпоративного управления для укрепления доверия инвесторов и общества </h2>
+                                </div>
+                        </div>
+                        <div class="vopros__container-info">
+                            <div class="vopros__container-info-up" id="up3" data-target="down1">
+                                <h2 class="vopros__container-info-up-txt">Стратегическое Развитие и Инновации</h2>
+                                <img src="./assets/img/neft.svg" alt="Капелька" class="vopros__container-info-up-icon">
+                            </div>
+                            <div class="vopros__container-info-down" id="down3">
+                                <h2 class="vopros__container-info-down-txt">В стратегическом развитии мы делаем ставку на инновации: внедряем передовые технологии добычи и переработки, инвестируем в новые источники энергии и разрабатываем экологически чистые решения. Цель - укрепить лидерство на рынке и обеспечить устойчивый рост в будущем.
+                                </h2>
+                            </div>
+                        </div>                        <div class="vopros__container-info">
+                            <div class="vopros__container-info-up" id="up4" data-target="down1">
+                                <h2 class="vopros__container-info-up-txt">Социальная Ответственность и Устойчивость</h2>
+                                <img src="./assets/img/neft.svg" alt="Капелька" class="vopros__container-info-up-icon">
+                            </div>
+                            <div class="vopros__container-info-down" id="down4">
+                                <h2 class="vopros__container-info-down-txt">Приверженность принципам социальной ответственности и устойчивого развития является неотъемлемой частью нашей стратегии. Мы стремимся к минимизации воздействия на окружающую среду, поддерживаем социальные инициативы и вкладываем в развитие регионов присутствия. Экологическая ответственность и социальная ориентированность повышают репутацию компании и привлекают ответственных инвесторов. ТНК-Волгоград верит, что устойчивый успех возможен только при условии гармоничного развития экономики, социальной сферы и окружающей среды.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </setion>
+                <section class="ecology" id="eco">
+                  <div class="ecology__container">
+                    <h2 class="ecology__title">Экологическая политика</h2>
+                    
+                    <div class="ecology__sections">
+                      <div class="ecology__section">
+                        <h3 class="ecology__subtitle">Обращение с отходами</h3>
+                        <p class="ecology__description">Мы реализуем комплексный подход к управлению отходами производства:</p>
+                        <ul class="ecology__list">
+                          <li class="ecology__item">Сортировка и раздельный сбор отходов</li>
+                          <li class="ecology__item">Переработка вторичных материальных ресурсов</li>
+                          <li class="ecology__item">Использование современных технологий утилизации</li>
+                          <li class="ecology__item">Минимизация образования отходов</li>
+                          <li class="ecology__item">Экологически безопасное размещение отходов</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="ecology__section">
+                        <h3 class="ecology__subtitle">Природоохранные мероприятия</h3>
+                        <p class="ecology__description">Наши ключевые природоохранные инициативы:</p>
+                        <ul class="ecology__list">
+                          <li class="ecology__item">Восстановление почв и рекультивация земель</li>
+                          <li class="ecology__item">Защита водных ресурсов и снижение сбросов</li>
+                          <li class="ecology__item">Снижение выбросов в атмосферу</li>
+                          <li class="ecology__item">Мониторинг состояния окружающей среды</li>
+                          <li class="ecology__item">Внедрение энергосберегающих технологий</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="gallery-section" style="padding-top: 70px; margin-bottom: 100px;" id="gallery">
+                  <h2 class="ecology__title">Галерея</h2>
+                    <div class="gallery-container">
+                      <button class="gallery-button prev-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                      </button>
+                      
+                      <div class="gallery">
+                        <div class="gallery-track">
+                          <div class="gallery-item">
+                            <img src="./assets/img/g1.png" alt="Gallery Image 1">
+                          </div>
+                          <div class="gallery-item">
+                            <img src="./assets/img/g2.png" alt="Gallery Image 2">
+                          </div>
+                          <div class="gallery-item">
+                            <img src="./assets/img/g3.png" alt="Gallery Image 3">
+                          </div>
+                          <div class="gallery-item">
+                            <img src="./assets/img/g4.png" alt="Gallery Image 4">
+                          </div>
+                          <div class="gallery-item">
+                            <img src="./assets/img/g1.png" alt="Gallery Image 5">
+                          </div>
+                          <div class="gallery-item">
+                            <img src="./assets/img/g3.png" alt="Gallery Image 6">
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <button class="gallery-button next-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                      </button>
+                    </div>
+                </section>
+                <section class="feedback" id="feedback">
+                  <div class="feedback-container">
+                    <h2 class="feedback-title">Обратная связь</h2>
+                    
+                    <div class="feedback-content">
+                      <div class="feedback-info">
+                        <p class="feedback-info-text">
+                          Свяжитесь с нами для сотрудничества, получения информации о нашей деятельности 
+                          или оставьте свои предложения. Мы ценим каждое обращение и обязательно вам ответим.
+                        </p>
+                        
+                        <div class="feedback-info-contacts">
+                          <div class="feedback-info-contacts-item">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <a href="mailto:info@oilcompany.com">info@oilcompany.com</a>
+                          </div>
+                          <div class="feedback-info-contacts-item">
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <a href="tel:+78001234567">8 (800) 123-45-67</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <form class="feedback-form">
+                        <div class="feedback-form-group">
+                          <label for="name">Ваше имя</label>
+                          <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="feedback-form-group">
+                          <label for="email">@Email</label>
+                          <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="feedback-form-group">
+                          <label for="message">Сообщение</label>
+                          <textarea id="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="feedback-form-submit">Отправить</button>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+                <section class="kont-section" id="kontact">
+                  <div class="kont-container">
+                    <h2 class="kont-title">Наши контакты</h2>
+                    
+                    <div class="kont-content">
+                      <div class="kont-card">
+                        <div class="kont-card-icon">
+                          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        <h3 class="kont-card-title">Главный офис</h3>
+                        <div class="kont-card-info">
+                          <p>
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            г. Москва, ул. Нефтяников, 42
+                          </p>
+                          <p>
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <a href="mailto:office@oilcompany.com">office@oilcompany.com</a>
+                          </p>
+                          <p>
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div class="kont-card">
+                        <div class="kont-card-icon">
+                          <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/></svg>
+                        </div>
+                        <h3 class="kont-card-title">Техническая поддержка</h3>
+                        <div class="kont-card-info">
+                          <p>
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <a href="mailto:support@oilcompany.com">support@oilcompany.com</a>
+                          </p>
+                          <p>
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <a href="tel:+78001234567">8 (800) 123-45-67</a>
+                          </p>
+                          <p>
+                            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                            Пн-Пт: 8:00 - 18:00
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div class="kont-card">
+                        <div class="kont-card-icon">
+                          <svg viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                        </div>
+                        <h3 class="kont-card-title">Карьера</h3>
+                        <div class="kont-card-info">
+                          <p>
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <a href="mailto:career@oilcompany.com">career@oilcompany.com</a>
+                          </p>
+                          <p>
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <a href="tel:+74957654321">+7 (495) 765-43-21</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="kont-map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3737401358326!2d37.618742315930474!3d55.75163398055259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311!2z0JrRgNCw0YHQvdCw0Y8g0YPQuy4sIDQyLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTI1MDQ3!5e0!3m2!1sru!2s!4v1620000000000!5m2!1sru!2s" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                  </div>
+                </section>
+                <button class="back-to-top" aria-label="Наверх"></button>
+            </div>
+        </main>
+        <footer class="site-footer">
+          <div class="site-footer__container">
+            <div class="site-footer__grid">
+              <div class="site-footer__about">
+                <div class="site-footer__logo">
+                  <img src="./assets/img/logo.svg" alt="Логотип компании">
+                </div>
+                <p>
+                  Лидер в нефтегазовой отрасли, внедряющий инновационные технологии 
+                  для устойчивого развития энергетики будущего.
+                </p>
+                <div class="site-footer__social">
+                  <a href="#" class="site-footer__social-link">
+                    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  </a>
+                  <a href="#" class="site-footer__social-link">
+                    <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                  </a>
+                  <a href="#" class="site-footer__social-link">
+                    <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  </a>
+                  <a href="#" class="site-footer__social-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.09.682-.218.682-.482 0-.237-.008-.866-.013-1.7-2.782.602-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.293 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                  </a>
+                </div>
+              </div>
+        
+
+        
+              <div class="site-footer__contact">
+                <h3 class="site-footer__nav-title">Контакты</h3>
+                <div class="site-footer__contact-item">
+                  <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <address>г. Москва, ул. Нефтяников, 25</address>
+                </div>
+                <div class="site-footer__contact-item">
+                  <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                </div>
+                <div class="site-footer__contact-item">
+                  <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                  <a href="mailto:info@company.ru">info@company.ru</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="site-footer__bottom">
+              <div class="site-footer__bottom-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Карта сайта</a>
+                <a href="#">Помощь</a>
+              </div>
+              <div class="site-footer__bottom-copyright">
+                © 2025 Нефтегазовая компания. Все права защищены.
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+    <script>
+      const backToTopButton = document.querySelector('.back-to-top');
+      
+      // Показываем/скрываем кнопку при скролле
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add('back-to-top--visible');
+        } else {
+          backToTopButton.classList.remove('back-to-top--visible');
+        }
+      });
+      
+      // Плавная прокрутка при клике
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const galleryTrack = document.querySelector('.gallery-track');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  
+  let currentIndex = 0;
+  const itemCount = galleryItems.length;
+  
+  function updateGallery() {
+    galleryTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+    // Скрываем/показываем кнопки в зависимости от позиции
+    prevButton.style.display = currentIndex === 0 ? 'none' : 'flex';
+    nextButton.style.display = currentIndex === itemCount - 1 ? 'none' : 'flex';
+  }
+  
+  prevButton.addEventListener('click', function() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateGallery();
+    }
+  });
+  
+  nextButton.addEventListener('click', function() {
+    if (currentIndex < itemCount - 1) {
+      currentIndex++;
+      updateGallery();
+    }
+  });
+  
+  // Инициализация
+  updateGallery();
+  
+  // Добавляем обработчик для свайпов (опционально)
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  galleryTrack.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+  
+  galleryTrack.addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+  
+  function handleSwipe() {
+    const threshold = 50;
+    
+    if (touchEndX < touchStartX - threshold) {
+      // Свайп влево
+      if (currentIndex < itemCount - 1) {
+        currentIndex++;
+        updateGallery();
+      }
+    } else if (touchEndX > touchStartX + threshold) {
+      // Свайп вправо
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateGallery();
+      }
+    }
+  }
+});
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Находим все элементы с id, начинающимся на "up"
+            const upElements = document.querySelectorAll('[id^="up"]');
+            
+            // Для каждого такого элемента добавляем обработчик клика
+            upElements.forEach(function(upElement) {
+                upElement.addEventListener('click', function() {
+                    // Получаем номер из id (например, "up1" -> "1")
+                    const idNumber = this.id.replace('up', '');
+                    
+                    // Находим соответствующий элемент "down"
+                    const downElement = document.getElementById('down' + idNumber);
+                    
+                    if (downElement) {
+                        // Переключаем состояние display между none и flex
+                        if (downElement.style.display === 'none' || !downElement.style.display) {
+                            downElement.style.display = 'flex';
+                        } else {
+                            downElement.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+        </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const burgerButton = document.getElementById('burger');
+  const linkElement = document.getElementById('link');
+
+  if (burgerButton && linkElement) { // Проверяем, существуют ли элементы
+    burgerButton.addEventListener('click', function() {
+      if (linkElement.style.display === 'flex') {
+        linkElement.style.display = 'none';
+      } else {
+        linkElement.style.display = 'flex';
+      }
+    });
+  } else {
+    console.error('Элемент с id "burger" или "link" не найден.'); // Обработка ошибки
+  }
+});
+    </script>
+</body>
+</html>
